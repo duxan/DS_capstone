@@ -1,35 +1,49 @@
 ---
-title: "WordPrediction pitch"
+title: "Word Prediction App"
 author: "Dusan Randjelovic"
 date: "July 16, 2016"
-output: ioslides_presentation
+output: 
+  ioslides_presentation:
+    widescreen: true
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE, warning = FALSE)
+knitr::opts_chunk$set(echo = F, warning = F)
 ```
 
-## R Markdown
+## Capstone objectives
 
-This is an R Markdown presentation. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+The main objective was to develop and deploy a Shiny app that is able to do seamless word prediction, real-time.
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document.
+The data for this project came from Swiftkey and for deployed app parts of **news** and **twitter** datasets were used.
 
-## Slide with Bullets
+Final deployment consists of 2 versions: one as per course specifications and other with more user-friendly response of three predicted words and a way to build naturally a full sentences.
 
-- Bullet 1
-- Bullet 2
-- Bullet 3
+## Methodology
 
-## Slide with R Output
+For each set of words last three words are used:  
+  - Prior to prediction, preparation of 2-gram, 3-gram and 4-gram datasets is done  
+  - Cleaning of input data is done to prepare input the same way training dataset is cleaned (profanity, stopwords, various artifacts...)  
+  - First, 4-gram data is looked up for match of all three words  
+  - If no match is found, 3-gram and eventually 2-gram is looked up  
+  
 
-```{r cars, echo = TRUE}
-summary(cars)
+## Capstone version
+
+```{r, out.width = "500px"}
+knitr::include_graphics("capstone.png")
 ```
 
-## Slide with Plot
+## Optimized UX version
 
-```{r pressure}
-plot(pressure)
+```{r, out.width = "500px"}
+knitr::include_graphics("3-choice.png")
 ```
 
+## Deployment
+
+App is deployed as R Shiny app on:  
+https://duxan.shinyapps.io/DS_capstone  
+
+This presentation's original location:
+http://rpubs.com/duxan/DS_capstone

@@ -1,0 +1,8 @@
+name: Publish Document
+title:
+account: rpubs
+server: rpubs.com
+appId: https://api.rpubs.com/api/v1/document/232573/c4fe0e152a7843969600eecb79aefdac
+bundleId: https://api.rpubs.com/api/v1/document/232573/c4fe0e152a7843969600eecb79aefdac
+url: http://rpubs.com/duxan/232573
+when: 1480780187.7411

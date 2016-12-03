@@ -1,0 +1,11 @@
+name: DS_capstone
+title:
+account: duxan
+server: shinyapps.io
+appId: 141932
+bundleId: 634661
+url: https://duxan.shinyapps.io/DS_capstone/
+when: 1480778220.84095
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: pitch.html|pitch.Rmd|train.R
